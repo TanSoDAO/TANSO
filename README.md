@@ -37,12 +37,12 @@ The figure below shows the relationship between the token contract and the fee s
 
 ![./assets/README_image/background_fig1.png](./assets/README_image/background_fig1.png)
 
-1. The contract owner sets the "fee / price percentage = 4%" and "fee staking / fee percentage = 75%".
+1. The contract owner sets the "fee / price percentage = 5%" and "fee staking / fee percentage = 50%".
 2. Account 1 (buyer) purchases a carbon credit on the TanSoDAO marketplace from Account 2 (seller) with the price of 1,000 TNS. The fee recipient can be specified other than the seller. In this case, it's Account 3.
 3. The token contract transfers the Account 1's balance to:
-    * Account 2 (seller): +9,600 TNS = 10,000 TNS - (0.04 * 1,000 TNS)
-    * The fee staking manager: +300 TNS = 0.75 * (0.04 * 1,000 TNS)
-    * Account 3 (fee recipient): +100 TNS = (0.04 * 1,000 TNS) - {0.75 * (0.04 * 1,000 TNS)}
+    * Account 2 (seller): +9,500 TNS = 10,000 TNS - (0.05 * 1,000 TNS)
+    * The fee staking manager: +250 TNS = 0.50 * (0.05 * 1,000 TNS)
+    * Account 3 (fee recipient): +250 TNS = (0.05 * 1,000 TNS) - {0.50 * (0.05 * 1,000 TNS)}
 4. The tokens stored in the fee staking manager contract will be distributed to each token holder by the contract owner later.
 
 ### Transfer mutex lock
