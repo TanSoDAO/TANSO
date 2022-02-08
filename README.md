@@ -50,11 +50,11 @@ The figure below shows the relationship between the token contract and the fee s
 There is a mutex lock flag for transferring, and any functions that involve transfer will fail during this boolean flag is true.
 This flag can be set only by the owner, and is used mainly when calculating the amount of the tokens to be distributed to each token holder for the staking.
 
-### Lock up of the owner's balance
+### Lock up of the balance of the team, marketing, and advisory
 
-There is lock up for the owner's balance. 
+There is lock up for the balance of the team, marketing, and advisory.
 The lock up schedule is shown below.
-The owner's balance cannot be lower than:
+The balance cannot be lower than:
   * 30% of the token cap until Jan. 1st 2023 00:00:00 UTC
   * 25% of the token cap until Jan. 1st 2024 00:00:00 UTC
   * 20% of the token cap until Jan. 1st 2025 00:00:00 UTC
